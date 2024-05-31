@@ -17,10 +17,12 @@ class MU_02_ROR_02_NEQTest {
         Assertions.assertArrayEquals(expectedOutputArray, MU_02_ROR_02_NEQ.deleteAllVal(inputArray,inputInteger));
     }
 
-    @DisplayName("MU_02_ROR_02_NEQ whith Killer")
+    @DisplayName("KILLER MU_02_ROR_02_NEQ")
     @ParameterizedTest(name = "Test {index} : remove {1} from {0} results {2}.")
     @ArgumentsSource(KillerArgsProvider.class)
     public void removeFromArrayTestKiller(int inputArray[], int inputInteger, int expectedOutputArray[]){
         Assertions.assertArrayEquals(expectedOutputArray, MU_02_ROR_02_NEQ.deleteAllVal(inputArray,inputInteger));
     }
+
+
 }

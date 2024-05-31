@@ -10,7 +10,7 @@ public class KillerArgsProvider implements ArgumentsProvider {
     @Override
     public Stream<? extends Arguments> provideArguments(ExtensionContext extensionContext) throws Exception {
         return Stream.of(
-                Arguments.of(new int[]{},1,new int[]{})
+                Arguments.of(new int[]{2,3,5},3,new int[]{2,5,0})
 
         );
     }
