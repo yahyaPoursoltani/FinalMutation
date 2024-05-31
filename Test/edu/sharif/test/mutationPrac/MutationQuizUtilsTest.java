@@ -14,4 +14,11 @@ class MutationQuizUtilsTest {
     public void removeFromArrayTest(int inputArray[], int inputInteger, int expectedOutputArray[]){
         Assertions.assertArrayEquals(expectedOutputArray, MutationQuizUtils.deleteAllVal(inputArray,inputInteger));
     }
+
+    @DisplayName("KILLER Tests on Ground String")
+    @ParameterizedTest(name = "Test {index} : remove {1} from {0} results {2}.")
+    @ArgumentsSource(KillerArgsProvider.class)
+    public void removeFromArrayTestKiller(int inputArray[], int inputInteger, int expectedOutputArray[]){
+        Assertions.assertArrayEquals(expectedOutputArray, MutationQuizUtils.deleteAllVal(inputArray,inputInteger));
+    }
 }
