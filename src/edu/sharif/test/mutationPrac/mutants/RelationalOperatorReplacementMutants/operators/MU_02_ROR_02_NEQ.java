@@ -15,7 +15,7 @@ public class MU_02_ROR_02_NEQ {
         int len= numbers.length;
         int j=0;
         for(int i=0; i<len; i++)
-            if(numbers[i]<=val1) //TODO FAULTY INSTRUCTION
+            if(numbers[i]!=val1) //TODO FAULTY INSTRUCTION
             {
                 remnum[j] = numbers[i];
                 j=j+1;

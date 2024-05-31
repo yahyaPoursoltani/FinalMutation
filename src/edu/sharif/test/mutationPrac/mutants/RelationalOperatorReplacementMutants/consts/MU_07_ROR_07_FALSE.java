@@ -15,7 +15,8 @@ public class MU_07_ROR_07_FALSE {
         int len= numbers.length;
         int j=0;
         for(int i=0; i<len; i++)
-            if(false) //TODO FAULTY INSTRUCTION
+            //TODO FAULTY INSTRUCTION
+            if(false)
             {
                 remnum[j] = numbers[i];
                 j=j+1;
