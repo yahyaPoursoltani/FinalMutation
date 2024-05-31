@@ -1,10 +1,7 @@
-import java.util.ArrayList;
+package edu.sharif.test.mutationPrac.mutants.RelationalOperatorReplacementMutants.consts;
 
-public class MutationQuizUtils {
-    /*
-    * Effects
-    *
-    * */
+public class MU_07_ROR_07_FALSE {
+
     public static int[] deleteAllVal(int[] numbers, int val1)
     {
         int[] remnum = new int[numbers.length];
@@ -18,7 +15,7 @@ public class MutationQuizUtils {
         int len= numbers.length;
         int j=0;
         for(int i=0; i<len; i++)
-            if(numbers[i]>=val1) //TODO FAULTY INSTRUCTION
+            if(false) //TODO FAULTY INSTRUCTION
             {
                 remnum[j] = numbers[i];
                 j=j+1;
