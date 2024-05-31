@@ -8,7 +8,6 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 import static org.junit.jupiter.api.Assertions.*;
 
 class MutationQuizUtilsTest {
-
     @DisplayName("Tests on Ground String")
     @ParameterizedTest(name = "Test {index} : remove {1} from {0} results {2}.")
     @ArgumentsSource(ArrayElemQuizArgsProvider.class)
